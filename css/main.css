@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  }
+.btn-group {
+  display: block;
+}
+[type="button"], .btn-success:hover {
+  margin: 0 14px;
+  float: right!important;
+  border-radius: 50%;
+  background-color: #e91e63!important;
+  font-size: 23px;
+  color: #fff;
+  border-color: #e91e63!important;
+}
+.inline-icons {
+  margin-bottom: 0;
+}
+.inline-icons [type="button"] {
+  font-size: 14px;
+  padding: 7px 14px;
+}
+.inline-icons {
+  display: none;
+  min-width: 160px;
+  width: 275px;
+  padding: 5px 0;
+  list-style: none;
+}
+.open > .inline-icons {
+  top: 0;
+  float: right;
+  display: inline-flex;
+  transform: translateX(45%);
+}
