@@ -1,35 +1,101 @@
 * {
   margin: 0;
+  padding: 0;
   }
-.btn-group {
+/*BOTONES */
+#button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+#button .btn-group {
   display: block;
 }
-[type="button"], .btn-success:hover {
-  margin: 0 14px;
+#button [type="button"] {
   float: right!important;
   border-radius: 50%;
-  background-color: #e91e63!important;
-  font-size: 23px;
-  color: #fff;
-  border-color: #e91e63!important;
+  font-size: 21px;
+  color: #fff!important;
+  border: none;
 }
+#button .btn-group > [class*="btn"],  .btn-group > [class*="btn"]:hover {
+  background-color: #e91e63!important;
+  padding: 14px 21px;
+}
+
 .inline-icons {
   margin-bottom: 0;
+  display: none;
+  width: 75%;
+  list-style: none;
 }
 .inline-icons [type="button"] {
-  font-size: 14px;
-  padding: 7px 14px;
-}
-.inline-icons {
-  display: none;
-  min-width: 160px;
-  width: 275px;
-  padding: 5px 0;
-  list-style: none;
+  padding: 8px 14px;
 }
 .open > .inline-icons {
   top: 0;
+  display: flex;
   float: right;
-  display: inline-flex;
-  transform: translateX(45%);
+  justify-content: space-around;
+  margin-top: 18px;
+}
+.green, .green:hover {
+  background-color: #26a69a!important;
+}
+.blue, .blue:hover {
+  background-color: #448AFF!important;
+}
+.green-light, .green-light:hover {
+  background-color: #4CAF50 !important;
+}
+.yellow, .yellow:hover {
+  background-color: #ffc107 !important
+}
+/*MODAL mensaje*/
+#mensaje .modal-body {
+  padding: 35px;
+}
+#mensaje .msn-title, #mensaje .msn-area {
+  position: relative;
+  margin-bottom: 21px;
+}
+.msn-title label, .msn-area label {
+  position: absolute;
+  bottom: 0;
+  color: #e5e5e5;
+}
+.msn-area label {
+  top: 24px;
+}
+#mensaje .input-text, #mensaje .text-area  {
+
+  width: 100%;
+  height: 49px;
+  padding-top: 21px;
+  color: black;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+  background-color: #fff;
+}
+#mensaje .text-area {
+  height: auto;
+}
+#mensaje .input-text:focus, #mensaje .text-area:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+.active {
+  top: 0;
+  color: #4CAF50;
+}
+.text-white {
+  color: #fff;
+}
+
+@media (min-width:641px)  {
+  .inline-icons {
+    width: 40%;
+  }
 }

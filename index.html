@@ -29,24 +29,30 @@
         </div>
       </div>
     </section>
-    <section id="botones">
+    <section id="button">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <div class="btn-group" role="group">
               <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                 <span class="glyphicon glyphicon-pencil"></span>
               </button>
               <ul class="inline-icons">
-                <li><button type="button" class="btn btn-success" >
+                <li><button type="button" class="btn green" data-toggle="modal" data-target="#mensaje" >
+                  <span class="glyphicon glyphicon-comment"></span>
+                </button>
+              </li>
+                <li><button type="button" class="btn blue" data-toggle="modal" data-target="#picture" >
+                    <span class="glyphicon glyphicon-picture"></span>
+                  </button>
+                </li>
+                <li><button type="button" class="btn green-light" data-toggle="modal" data-target="#calendar">
 
-                    <span class="glyphicon glyphicon-facetime-video"></span>
+                    <span class="glyphicon glyphicon-calendar"></span>
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="btn btn-success" >
-
+                  <button type="button" class="btn yellow" data-toggle="modal" data-target="#video">
                       <span class="glyphicon glyphicon-facetime-video"></span>
                   </button>
                 </li>
@@ -56,8 +62,64 @@
         </div>
       </div>
     </section>
-    <section id="mensaje">
-      <h2>hola</h2>
+    <!-- Modal msn -->
+    <section class="modal fade" id="mensaje" tabindex="-1" role="dialog" aria-labelledby="mensaje" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="msn-title">
+              <label for="titulo">Título</label>
+              <input type="text" class="input-text" id="titulo" >
+            </div>
+            <div class="msn-area">
+              <label for="area">Mensaje</label>
+              <textarea class="text-area" rows="3" id="area"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn green text-white">PUBLICAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal picture -->
+    <section class="modal fade" id="picture" tabindex="-1" role="dialog" aria-labelledby="picture" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn blue text-white">PUBLICAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal calendar -->
+    <section class="modal fade" id="calendar" tabindex="-1" role="dialog" aria-labelledby="calendar" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn green-light text-white">PUBLICAR</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal video -->
+    <section class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="video" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn yellow text-white">PUBLICAR</button>
+          </div>
+        </div>
+      </div>
     </section>
 
 
